@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="challApply">
+	<insert id="insert" parameterClass="challApplyVO">
+		insert into challapplyvo values(challapply.nextval, #mem_id#, #chall_no#)
+	</insert>
+	<select id="selectId" parameterClass="String" resultClass="challApplyVO" >
+		select * from challapplyvo where mem_id = #mem_id#
+	</select>
+
+	<select id="selectAll" resultClass="challApplyVO" >
+		select * from challapplyvo 
+	</select>
+	
+	<select id="selectCav" parameterClass="challApplyVO" resultClass="challApplyVO" >
+		select * from challapplyvo where mem_id = #mem_id# and chall_no = #chall_no#
+	</select>
+	
+</sqlMap>

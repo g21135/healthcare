@@ -1,0 +1,63 @@
+package kr.or.ddit.LoginSession;
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
+import java.util.List;
+
+import kr.or.ddit.vo.MemberVO;
+import kr.or.ddit.vo.TrainerVO;
+
+public class ClientListImpl extends UnicastRemoteObject implements IClientList {
+
+	private static IClientList client;
+
+	private ClientListImpl() throws RemoteException {
+	}
+
+	public static IClientList getInstance() throws RemoteException {
+		if (client == null) {
+			try {
+				client = new ClientListImpl();
+			} catch (RemoteException e) {
+				e.printStackTrace();
+			}
+		}
+		return client;
+	}
+
+	public ArrayList<MemberVO> memberList = new ArrayList<>();
+	public ArrayList<TrainerVO> trainerList = new ArrayList<>();
+
+	@Override
+	public void addMemberSession(MemberVO mem) throws RemoteException {
+		memberList.add(mem);
+	}
+
+	@Override
+	public void addTrainerSession(TrainerVO trainer) throws RemoteException {
+		trainerList.add(trainer);
+	}
+
+	@Override
+	public List<MemberVO> getMemberSession() throws RemoteException {
+		return memberList;
+	}
+
+	@Override
+	public List<TrainerVO> getTrainerSession() throws RemoteException {
+		return trainerList;
+	}
+
+	@Override
+	public void removeMemberSession(MemberVO mem) throws RemoteException {
+		memberList.remove(mem);
+	}
+
+	@Override
+	public void removeTrainerSession(TrainerVO trainer) throws RemoteException {
+		trainerList.remove(trainer);
+
+	}
+
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="talkAdmin">
+
+	<select id="selectNum" resultClass="talkAdminVO" parameterClass="int">
+		select * from talkAdminVO where openTalk_no #openTalk_no#
+	</select>
+
+	<select id="selectAll" resultClass="talkAdminVO" >
+		select * from talkAdminVO 
+	</select>
+	<select id="selectId" resultClass="talkAdminVO" parameterClass="String">
+		select * from talkAdminVO where mem_id = #mem_id#
+	</select>
+	
+	<insert id="insert" parameterClass="talkAdminVO">
+		insert into talkadminvo values (TalkAdminSequence.nextval, #mem_id# , #opentalk_no#, sysdate)
+	</insert>
+	
+	<delete id="delete" parameterClass="talkAdminVO"> 
+		delete talkAdminVO where mem_id = #mem_id# and opentalk_no = #opentalk_no#
+	</delete>
+
+</sqlMap>

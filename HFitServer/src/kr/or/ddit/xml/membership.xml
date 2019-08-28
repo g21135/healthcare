@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="membership">
+
+	<insert id="insert" parameterClass="HashMap">
+		insert into membershipvo values ((select nvl(max(membership_no),0)+1 from membershipvo), #mem_id#, 
+    			sysdate, sysdate + #time#)
+	</insert>
+	
+	<select id="getMembershipList" resultClass="membershipVO">
+		select * from membershipVO
+	</select>
+	
+</sqlMap>

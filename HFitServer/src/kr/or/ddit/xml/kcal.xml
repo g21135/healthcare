@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<!-- 칼로리 사전 -->
+<sqlMap namespace="kcal">
+	<!-- 음식 -->
+	<insert id="insertFoodKcal" parameterClass="kcalVO">
+		insert into
+		kcalvo(kcal_num, div_code, kcal_name, kcal_calory)
+		values(KCAL_NUM_SEQ.nextval,#div_code#, #kcal_name#, #kcal_calory#)
+		<!--               . 다음 번호  -->
+	</insert>
+
+	<update id="updateFoodKcal" parameterClass="kcalVO">
+		update kcalvo set		
+		kcal_name = #kcal_name#,
+		kcal_calory = #kcal_calory#
+		where kcal_num = #kcal_num#
+	</update>
+
+	<delete id="deleteFoodKcal" parameterClass="int">
+		delete from kcalvo
+		where kcal_num = #kcal_num#
+	</delete>
+
+	<select id="getFoodKcalAll" resultClass="kcalVO">
+		select KCAL_NAME, KCAL_CALORY, KCAL_NUM
+		from KCALVO
+		where DIV_CODE = 1
+	</select>
+
+	<select id="getSearchFoodKcal" parameterClass="kcalVO"
+		resultClass="kcalVO">
+		select KCAL_NAME,
+		KCAL_CALORY
+		from KCALVO
+		where DIV_CODE = 1 and kcal_name like  '%' || #kcal_name# || '%'		
+	</select>
+	
+	
+	<!-- 운동 -->
+	<insert id="insertExerKcal" parameterClass="kcalVO">
+		insert into
+		kcalvo(kcal_num, div_code, kcal_name, kcal_calory)
+		values(#kcal_num#,
+		#div_code#, #kcal_name#, #kcal_calory#)
+	</insert>
+
+	<update id="updateExerKcal" parameterClass="kcalVO">
+		update kcalvo set
+		kcal_num = #kcal_num#,
+		div_code = #div_code#,
+		kcal_name = #kcal_name#,
+		where kcal_calory = #kcal_calory#
+	</update>
+
+	<delete id="deleteExerKcal" parameterClass="kcalVO">
+		delete from kcalvo
+		where kcal_num = #kcal_num#
+	</delete>
+
+	<select id="getAllExerKcal" resultClass="kcalVO">
+		select KCAL_NAME,
+		KCAL_CALORY
+		from KCALVO
+		where DIV_CODE = 2
+	</select>
+	<select id="getSearchExerKcal" parameterClass="kcalVO"
+		resultClass="kcalVO">
+		select KCAL_NAME,
+		KCAL_CALORY
+		from KCALVO
+		where DIV_CODE = 2 and kcal_name like  '%' || #kcal_name# || '%'
+	</select>
+
+</sqlMap>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+			
+<sqlMap namespace="deal">
+
+ 	<update id="InsertOrder"  parameterClass="dealhistroyVO" >
+	insert into dealhistoryvo (deal_no,deal_date,order_prodname,order_prodqty,order_prodprice,order_prodship,order_prodshipprice,order_allprice,mem_id,paycheck,order_img)
+	values (deal_no.nextval,(SELECT TO_CHAR(SYSDATE, 'YYYYMMDD') FROM DUAL),#order_prodname#,#order_prodqty#,#order_prodprice#,#order_prodship#,#order_prodshipprice#,#order_allprice#,#mem_id#,0,#order_img#)
+	</update>
+
+
+
+
+	<select id="AllOrderListGet" parameterClass="dealhistroyVO" resultClass="dealhistroyVO">
+	
+	select *
+	from dealhistoryvo
+	where mem_id = #mem_id# and paycheck = 0 
+	order by deal_no asc
+	</select>
+	
+	<select id="SelectOrderListGet" parameterClass="dealhistroyVO" resultClass="dealhistroyVO">
+	
+	select *
+	from dealhistoryvo
+	where mem_id = #mem_id# and paycheck = 1 
+	order by deal_no asc
+	</select>
+	
+	<delete id="DeleteOrder" parameterClass="dealhistroyVO">
+	
+	delete from dealhistoryvo where paycheck = 0
+	</delete>
+	
+	<update id="PayUpdate" parameterClass="dealhistroyVO">
+	
+	
+	update dealhistoryvo
+	set paycheck = 1
+	where paycheck = 0
+	
+	</update>
+	
+	
+	
+
+</sqlMap>
