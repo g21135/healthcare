@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="reply">
+	<select id = "allReplyList" resultClass="replyVO" parameterClass = "int">
+	select * from replyVO where post_no=#post_no#
+	</select>
+	
+	<insert id = "insertReply" parameterClass = "replyVO">
+	insert into replyVO(reply_no, post_no, reply_writer, reply_date, reply_content) 
+	values((select nvl(max(reply_no),0)+1 from replyVO), #post_no#, #reply_writer# ,sysdate, #reply_content#)
+	</insert>
+	
+	<delete id="deleteReply" parameterClass = "int">
+	delete from replyVO where reply_no = #reply_no#
+	</delete>
+	
+	<update id="updateReply" parameterClass = "replyVO">
+	update replyVO set 
+	reply_content = #reply_content# 
+	where reply_no = #reply_no# and reply_writer = '#reply_writer#
+	</update>	
+
+</sqlMap>
