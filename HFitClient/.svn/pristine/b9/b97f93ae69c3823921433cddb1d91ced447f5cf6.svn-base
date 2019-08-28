@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.buyMembership.BuyMemMainController">
+   <center>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="720.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="20.0" right="20.0" />
+         </BorderPane.margin>
+         <children>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="280.0" style="-fx-border-color: #e9e9e9;">
+               <children>
+                  <Pane prefHeight="69.0" prefWidth="198.0" style="-fx-background-color: #FFE9EB;">
+                     <children>
+                        <Label layoutX="48.0" layoutY="9.0" text="Health &amp; Fit">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <HBox prefHeight="76.0" prefWidth="208.0">
+                     <children>
+                        <Label minWidth="-Infinity" prefHeight="15.0" text="추천">
+                           <HBox.margin>
+                              <Insets left="5.0" right="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="80.0" prefWidth="155.0" spacing="5.0">
+                           <children>
+                              <Label text="의지가 필요하신 분">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <Label prefHeight="15.0" text="케어가 필요하신 분">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <Label minWidth="-Infinity" prefHeight="15.0" text="어려움을 겪으셨던 분">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <Line endX="100.0" startX="-100.0" stroke="#e9e9e9" />
+                  <HBox prefHeight="76.0" prefWidth="208.0">
+                     <children>
+                        <Label minWidth="-Infinity" prefHeight="15.0" text="구성">
+                           <HBox.margin>
+                              <Insets left="5.0" right="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="80.0" prefWidth="155.0" spacing="5.0">
+                           <children>
+                              <Label minWidth="-Infinity" text="개인상황 맞춤 심리케어">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <Label minWidth="-Infinity" prefHeight="15.0" text="영양전문 기반 식단케어">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <Label minWidth="-Infinity" prefHeight="15.0" text="여성체형 맞춤 운동케어">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Line endX="100.0" startX="-100.0" stroke="#e9e9e9" />
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label minWidth="-Infinity" prefHeight="15.0" text="기간">
+                           <HBox.margin>
+                              <Insets left="5.0" right="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <VBox spacing="5.0">
+                           <children>
+                              <Label fx:id="oneMonth" minWidth="-Infinity" prefHeight="15.0" text="30">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="5.0" />
+                                 </VBox.margin></Label>
+                           </children>
+                        </VBox>
+                        <Label fx:id="oneMonth1" minWidth="-Infinity" prefHeight="15.0" text="일">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="RIGHT" text="￦">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="oneMonthPrice" contentDisplay="RIGHT" minWidth="-Infinity" text="79,000">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Line endX="100.0" startX="-100.0" stroke="#e9e9e9" />
+                  <JFXButton fx:id="onebtn" onAction="#onebtn" prefHeight="43.0" prefWidth="87.0" style="-fx-background-color: #FFE9EB;" text="구매">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="280.0" style="-fx-border-color: #e9e9e9;">
+               <children>
+                  <Pane prefHeight="69.0" prefWidth="198.0" style="-fx-background-color: #76fcdf;">
+                     <children>
+                        <Label layoutX="48.0" layoutY="9.0" text="Health &amp; Fit">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <HBox prefHeight="76.0" prefWidth="218.0">
+                     <children>
+                        <Label minWidth="-Infinity" prefHeight="15.0" text="추천">
+                           <HBox.margin>
+                              <Insets left="5.0" right="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="80.0" prefWidth="155.0" spacing="5.0">
+                           <children>
+                              <Label text="게으르신 분">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <Label prefHeight="15.0" prefWidth="155.0" text="케어가 필요하신 분">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <Label minWidth="-Infinity" prefHeight="15.0" text="미친듯이 하겠다는 분">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Line endX="100.0" startX="-100.0" stroke="#e9e9e9" />
+                  <HBox prefHeight="76.0" prefWidth="208.0">
+                     <children>
+                        <Label minWidth="-Infinity" prefHeight="15.0" text="구성">
+                           <HBox.margin>
+                              <Insets left="5.0" right="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="80.0" prefWidth="155.0" spacing="5.0">
+                           <children>
+                              <Label minWidth="-Infinity" text="개인상황 맞춤 심리케어">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <Label minWidth="-Infinity" prefHeight="15.0" text="영양전문 기반 식단케어">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <Label minWidth="-Infinity" prefHeight="15.0" text="여성체형 맞춤 운동케어">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Line endX="100.0" startX="-100.0" stroke="#e9e9e9" />
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label minWidth="-Infinity" prefHeight="15.0" text="기간">
+                           <HBox.margin>
+                              <Insets left="5.0" right="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <VBox spacing="5.0">
+                           <children>
+                              <Label fx:id="threeMonth" minWidth="-Infinity" text="90">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                        <Label fx:id="threeMonth1" minWidth="-Infinity" text="일">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="RIGHT" text="￦">
+                           <HBox.margin>
+                              <Insets left="35.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="threeMonthPrice" contentDisplay="RIGHT" minWidth="-Infinity" text="159,000">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Line endX="100.0" startX="-100.0" stroke="#e9e9e9" />
+                  <JFXButton fx:id="threebtn" onAction="#threebtn" prefHeight="43.0" prefWidth="87.0" style="-fx-background-color: #76fcdf;" text="구매">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="280.0" style="-fx-border-color: #e9e9e9;">
+               <children>
+                  <Pane prefHeight="69.0" prefWidth="198.0" style="-fx-background-color: #00ced1;">
+                     <children>
+                        <Label layoutX="48.0" layoutY="9.0" text="Health &amp; Fit">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <HBox prefHeight="76.0" prefWidth="208.0">
+                     <children>
+                        <Label minWidth="-Infinity" prefHeight="15.0" text="추천">
+                           <HBox.margin>
+                              <Insets left="5.0" right="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="80.0" prefWidth="155.0" spacing="5.0">
+                           <children>
+                              <Label text="의지가 필요하신 분">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <Label prefHeight="15.0" prefWidth="155.0" text="케어가 필요하신 분">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <Label minWidth="-Infinity" prefHeight="15.0" text="어려움을 겪으셨던 분">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Line endX="100.0" startX="-100.0" stroke="#e9e9e9" />
+                  <HBox prefHeight="76.0" prefWidth="208.0">
+                     <children>
+                        <Label minWidth="-Infinity" prefHeight="15.0" text="구성">
+                           <HBox.margin>
+                              <Insets left="5.0" right="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="80.0" prefWidth="155.0" spacing="5.0">
+                           <children>
+                              <Label minWidth="-Infinity" text="개인상황 맞춤 심리케어">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <Label minWidth="-Infinity" prefHeight="15.0" text="영양전문 기반 식단케어" />
+                              <Label minWidth="-Infinity" prefHeight="15.0" text="여성체형 맞춤 운동케어">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Line endX="100.0" startX="-100.0" stroke="#e9e9e9" />
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label minWidth="-Infinity" prefHeight="15.0" text="기간">
+                           <HBox.margin>
+                              <Insets left="5.0" right="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <VBox spacing="5.0">
+                           <children>
+                              <Label fx:id="sixMonth" minWidth="-Infinity" text="180">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                        <Label fx:id="sixMonth1" minWidth="-Infinity" text="일">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="RIGHT" text="￦">
+                           <HBox.margin>
+                              <Insets left="35.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sixMonthPrice" contentDisplay="RIGHT" minWidth="-Infinity" text="459,000">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Line endX="100.0" startX="-100.0" stroke="#e9e9e9" />
+                  <JFXButton onAction="#sixbtn" prefHeight="43.0" prefWidth="87.0" style="-fx-background-color: #00ced1;" text="구매">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <BorderPane prefHeight="65.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label text="회원권 구매" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="30.0" top="30.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </top>
+</BorderPane>

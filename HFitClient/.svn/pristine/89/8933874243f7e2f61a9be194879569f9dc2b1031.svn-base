@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+
+.root {
+	-fx-background : #ffffff;
+}
+
+.jfxbutton {
+	-fx-background-color : pink;
+}

@@ -1,0 +1,36 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+.jfx-button
+{
+	
+	-fx-background-color:#FFF;
+	-fx-padding: 10 10 10 10;
+	-fx-background-radius:10 10 0 10;
+    -fx-font-size:15px;	
+    -fx-border-width: 2.5;
+	-fx-border-insets: 5;
+    -fx-border-style: dashed;
+	-fx-font-weight: bold;
+    
+}
+
+#addClassTime{
+	-fx-border-color: #5d8ab8;
+	
+}
+
+#addDeadline{
+	-fx-border-color: #e55933;
+	
+}
+
+#addExam{
+	-fx-border-color: #fcb813;
+	
+}
+
+#addOtherActivity{
+	-fx-border-color: #71d1b3;
+	
+}

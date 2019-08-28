@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="noticeMainView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.board.NoticeMainController">
+   <center>
+      <AnchorPane prefHeight="479.0" prefWidth="748.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pagination fx:id="pagination" layoutX="127.0" layoutY="91.0" prefHeight="443.0" prefWidth="714.0" />
+            <TableView fx:id="noticeTable" layoutX="96.0" layoutY="91.0" prefHeight="393.0" prefWidth="776.0">
+              <columns>
+                <TableColumn fx:id="num" prefWidth="76.0" text="NUM" />
+                <TableColumn fx:id="title" prefWidth="369.0" text="TITLE" />
+                  <TableColumn fx:id="name" prefWidth="124.0" text="NAME" />
+                  <TableColumn fx:id="date" prefWidth="112.0" text="DATE" />
+              </columns>
+            </TableView>
+            <Label layoutX="87.0" text="NOTICE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchText" layoutX="653.0" layoutY="57.0" prefHeight="26.0" prefWidth="135.0" />
+            <JFXButton fx:id="searchBtn" layoutX="796.0" layoutY="57.0" onAction="#searchBtnClick" prefHeight="26.0" style="-fx-background-color: #FFE1E6;" text="검색">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXButton>
+            <ComboBox fx:id="searchSort" layoutX="547.0" layoutY="57.0" prefHeight="26.0" prefWidth="100.0" />
+            <JFXButton layoutX="783.0" layoutY="500.0" onAction="#insertBtnClick" prefHeight="26.0" style="-fx-background-color: #FFE1E6;" text="글쓰기">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <top>
+      <HBox alignment="TOP_RIGHT" prefHeight="33.0" prefWidth="830.0" spacing="20.0" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <JFXButton fx:id="noticeBoard" onAction="#noticeBtnClick" style="-fx-background-color: #FDF5E6;" text="공지사항">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="event" onAction="#eventBtnClick" text="이벤트">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="130.0" />
+               </HBox.margin></JFXButton>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

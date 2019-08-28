@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="mainView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.admin.ProdManegermentController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="prod_tableview" layoutX="7.0" layoutY="50.0" prefHeight="380.0" prefWidth="744.0">
+              <columns>
+                <TableColumn fx:id="prod_no" prefWidth="64.0" text="상품코드" />
+                  <TableColumn fx:id="prod_name" prefWidth="97.0" text="상품명" />
+                  <TableColumn fx:id="prod_content" prefWidth="210.0" text="상품설명" />
+                  <TableColumn fx:id="prod_price" prefWidth="69.0" text="단가" />
+                  <TableColumn fx:id="prod_qty" prefWidth="82.0" text="판매수량" />
+                  <TableColumn fx:id="prod_ramain" prefWidth="61.0" text="재고" />
+                  <TableColumn fx:id="prod_totalprice" prefWidth="96.0" text="매출합계" />
+                  <TableColumn fx:id="prod_sleect" prefWidth="64.0" text="선택" />
+              </columns>
+            </TableView>
+            <JFXComboBox fx:id="prod_div" layoutX="17.0" layoutY="14.0" prefHeight="23.0" prefWidth="136.0" />
+            <JFXButton fx:id="prod_add" layoutX="589.0" layoutY="478.0" text="추가" />
+            <JFXButton fx:id="prod_delete" layoutX="675.0" layoutY="478.0" text="삭제" />
+            <Pagination fx:id="pag_prod" layoutX="1.0" layoutY="44.0" prefHeight="434.0" prefWidth="755.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.card.CardMainController">
+   <children>
+      <Label layoutX="29.0" layoutY="12.0" text="주문 / 결제">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Line endX="690.0" layoutX="113.0" layoutY="50.0" startX="-100.0" strokeWidth="3.0" />
+      <Label layoutX="14.0" layoutY="67.0" text="구매자정보">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Line endX="698.0" layoutX="108.0" layoutY="97.0" opacity="0.37" startX="-100.0" />
+      <Label layoutX="733.0" layoutY="19.0" text="주문결제" textFill="#167ffa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Pane layoutX="7.0" layoutY="98.0" prefHeight="164.0" prefWidth="139.0" style="-fx-background-color: #e9e9e9;">
+         <children>
+            <Label layoutX="88.0" layoutY="8.0" text="이름">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="46.0" text="이메일">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="93.0" text="휴대폰 번호">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="159.0" layoutY="8.0" text="이름">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="159.0" layoutY="47.0" text="이메일">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Line endX="698.0" layoutX="108.0" layoutY="136.0" opacity="0.07" startX="-100.0" />
+      <Line endX="698.0" layoutX="108.0" layoutY="174.0" opacity="0.07" startX="-100.0" />
+      <Label fx:id="tel" layoutX="164.0" layoutY="191.0" text="휴대폰 번호">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="159.0" layoutY="234.0" opacity="0.86" text="＊ 인증 번호를 못 받았다면, 1577-7011 번호 차단 및 스팸 설정을 확인해주세요">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Line endX="698.0" layoutX="108.0" layoutY="263.0" opacity="0.07" startX="-100.0" />
+      <Label layoutX="15.0" layoutY="295.0" text="구매상품">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Line endX="698.0" layoutX="108.0" layoutY="325.0" opacity="0.37" startX="-100.0" />
+      <Pane layoutX="7.0" layoutY="326.0" prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #e9e9e9;">
+         <children>
+            <Label layoutX="145.0" layoutY="8.0" text="상품정보">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="546.0" layoutY="9.0" text="할인금액">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="660.0" layoutY="10.0" text="할인적용금액">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Line endX="698.0" layoutX="107.0" layoutY="367.0" opacity="0.07" startX="-100.0" />
+      <Line endX="698.0" layoutX="108.0" layoutY="410.0" opacity="0.07" startX="-100.0" />
+      <Label layoutX="572.0" layoutY="378.0" text="금액">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Line endX="-17.0" layoutX="594.0" layoutY="369.0" opacity="0.07" rotate="90.0" startX="-100.0" />
+      <Line endX="-17.0" layoutX="697.0" layoutY="368.0" opacity="0.07" rotate="90.0" startX="-100.0" />
+      <Label fx:id="saleApplyPrice" layoutX="701.0" layoutY="377.0" text="금액">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="194.0" opacity="0.35" text="쿠폰/티켓정보는 구매한 분의 번호로 전송됩니다.">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="437.0" text="결제정보 입력">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="149.0" layoutX="7.0" layoutY="469.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="527.0" />
+      <Line endX="360.0" layoutX="108.0" layoutY="582.0" opacity="0.07" startX="-100.0" style="-fx-stroke-dash-array: 3;" />
+      <Label layoutX="21.0" layoutY="592.0" text="법인/기업카드는 신용카드 무이자 할부 적용이 되지 않습니다.">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="496.0" text="카드선택">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="CARET_RIGHT" />
+         </graphic>
+      </Label>
+      <Label layoutX="35.0" layoutY="529.0" text="할부선택">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="CARET_RIGHT" />
+         </graphic>
+      </Label>
+      <ComboBox fx:id="sortCard" layoutX="139.0" layoutY="495.0" prefHeight="23.0" prefWidth="167.0" />
+      <ComboBox fx:id="howBuy" layoutX="139.0" layoutY="528.0" prefHeight="23.0" prefWidth="167.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="149.0" layoutX="541.0" layoutY="469.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="266.0" />
+      <Label fx:id="totalPrice" layoutX="610.0" layoutY="509.0" text="459,000" textFill="RED">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="750.0" layoutY="522.0" text="원">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Whatmonth" layoutX="220.0" layoutY="377.0" text="일">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="269.0" layoutY="377.0" text="회원권">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="551.0" layoutY="569.0" onAction="#paymentBtn" prefHeight="40.0" prefWidth="246.0" style="-fx-background-color: red;" text="결제하기" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="103.0" layoutY="377.0" text="Health &amp; Fit ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

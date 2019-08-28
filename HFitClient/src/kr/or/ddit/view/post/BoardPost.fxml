@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="boardPostView" prefHeight="678.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.post.BoardPostController">
+   <center>
+      <AnchorPane prefHeight="450.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="621.0" layoutX="235.0" layoutY="66.0" startX="-58.5" strokeWidth="2.0" />
+            <Label layoutX="207.0" layoutY="80.0" text="제목">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="title" layoutX="276.0" layoutY="76.0" prefHeight="23.0" prefWidth="545.0" style="-fx-border-color: #FFE1E6;" />
+            <Line endX="620.0" layoutX="235.0" layoutY="109.0" startX="-58.5" stroke="#dddbdb" strokeWidth="0.7" />
+            <Label layoutX="206.0" layoutY="119.0" text="작성자">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="name" layoutX="276.0" layoutY="115.0" prefHeight="25.0" prefWidth="223.0" style="-fx-border-color: #FFE1E6;" />
+            <Label layoutX="607.0" layoutY="118.0" text="작성일">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="date" layoutX="671.0" layoutY="115.0" prefHeight="25.0" prefWidth="151.0" style="-fx-border-color: #FFE1E6;" />
+            <Line endX="620.0" layoutX="235.0" layoutY="155.0" startX="-58.5" stroke="#dddbdb" strokeWidth="0.7" />
+            <JFXTextArea fx:id="txtContent" layoutX="196.0" layoutY="167.0" prefHeight="150.0" prefWidth="636.0" />
+            <JFXButton fx:id="list" layoutX="216.0" layoutY="520.0" onAction="#listBtnClick" prefHeight="26.0" prefWidth="143.0" style="-fx-background-color: #FFE1E6;" text="목록으로 돌아가기">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="update" layoutX="685.0" layoutY="520.0" onAction="#updateBtnClick" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: #FFE1E6;" text="수정">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="delete" layoutX="757.0" layoutY="520.0" onAction="#deleteBtnClick" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: #FFE1E6;" text="삭제">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ok" layoutX="614.0" layoutY="520.0" onAction="#okBtnClick" prefHeight="26.0" prefWidth="57.0" style="-fx-background-color: #FFE1E6;" text="확인">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="209.0" layoutY="322.0" text="댓글수 " />
+            <Label fx:id="count" layoutX="272.0" layoutY="322.0" text="0" />
+            <TableView fx:id="replyTable" layoutX="199.0" layoutY="344.0" prefHeight="98.0" prefWidth="630.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="120.0" text="ID" />
+                <TableColumn fx:id="content" prefWidth="402.0" text="CONTENT" />
+                  <TableColumn fx:id="replyDate" prefWidth="107.0" text="DATE" />
+              </columns>
+            </TableView>
+            <TextArea fx:id="replyTxt" layoutX="201.0" layoutY="452.0" prefHeight="56.0" prefWidth="551.0" />
+            <JFXButton fx:id="replyInsert" layoutX="758.0" layoutY="452.0" onAction="#replyBtnClick" prefHeight="55.0" prefWidth="68.0" style="-fx-background-color: #d2d2d2; -fx-border-radius: 10; -fx-border-color: #FF7493;" text="등록">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="myReportPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.myReport.diary.DiaryMainController">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="768.0" style="-fx-background-color: #fff;">
+         <children>
+            <StackPane fx:id="weekPage" layoutX="27.0" layoutY="89.0" prefHeight="538.0" prefWidth="758.0" style="-fx-border-color: #000;" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="89.0" />
+            <JFXButton fx:id="diet" layoutX="186.0" layoutY="27.0" onAction="#addDietEntry" prefHeight="50.0" prefWidth="120.0" stylesheets="@../CSS/applications.css" text="식단" textFill="#5d8ab8">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="exercise" layoutX="306.0" layoutY="27.0" onAction="#addExerciseEntry" prefHeight="50.0" prefWidth="120.0" stylesheets="@../CSS/applications.css" text="운동" textFill="#e55933">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="etc" layoutX="426.0" layoutY="27.0" onAction="#addEtcEntry" prefHeight="50.0" prefWidth="120.0" stylesheets="@../CSS/applications.css" text="기타" textFill="#71d1b3">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="save" layoutX="558.0" layoutY="39.0" onAction="#saveData" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: #333;" text=" Save Changes" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="myReportBtn" layoutX="26.0" layoutY="34.0" onAction="#myReportBtnClick" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #00ced1;" text="My Report" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

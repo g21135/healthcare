@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.card.CardInfoController">
+   <children>
+      <Pane prefHeight="42.0" prefWidth="569.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="24.0" layoutY="12.0" text="카드결제 승인조회" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Label layoutX="21.0" layoutY="55.0" text="카드 회원인증">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="80.0" text="최초 1회만 입력하시면, 최근 승인내역을 불러옵니다">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Line endX="440.0" layoutX="115.0" layoutY="108.0" opacity="0.36" startX="-100.0" strokeWidth="0.2" />
+      <Label layoutX="28.0" layoutY="120.0" text="카드종류">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Line endX="440.0" layoutX="114.0" layoutY="153.0" opacity="0.36" startX="-100.0" strokeWidth="0.2" />
+      <Label layoutX="28.0" layoutY="168.0" text="카드번호">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="card_Num1" layoutX="194.0" layoutY="164.0" prefHeight="29.0" prefWidth="57.0" />
+      <TextField fx:id="card_Num2" layoutX="259.0" layoutY="164.0" prefHeight="29.0" prefWidth="57.0" />
+      <TextField fx:id="card_Num3" layoutX="323.0" layoutY="164.0" prefHeight="29.0" prefWidth="57.0" />
+      <TextField fx:id="card_Num4" layoutX="387.0" layoutY="164.0" prefHeight="29.0" prefWidth="57.0" />
+      <Line endX="440.0" layoutX="115.0" layoutY="203.0" opacity="0.36" startX="-100.0" strokeWidth="0.2" />
+      <Label layoutX="28.0" layoutY="217.0" text="유효기간">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cardAlidity_month" layoutX="194.0" layoutY="213.0" prefHeight="29.0" prefWidth="100.0" />
+      <Label layoutX="304.0" layoutY="218.0" text="월" />
+      <TextField fx:id="cardAlidity_year" layoutX="335.0" layoutY="213.0" prefHeight="29.0" prefWidth="100.0" />
+      <Label layoutX="445.0" layoutY="218.0" text="년" />
+      <Line endX="440.0" layoutX="115.0" layoutY="252.0" opacity="0.36" startX="-100.0" strokeWidth="0.2" />
+      <Label layoutX="28.0" layoutY="265.0" text="CVC번호">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cvc_Num" layoutX="194.0" layoutY="261.0" prefHeight="29.0" prefWidth="100.0" />
+      <Line endX="440.0" layoutX="115.0" layoutY="299.0" opacity="0.36" startX="-100.0" strokeWidth="0.2" />
+      <Label layoutX="35.0" layoutY="306.0" opacity="0.55" text="＊ CVC번호란 카드 뒷면의 서명란 카드번호 중 맨 뒤의 3자리 숫자">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="343.0" text="비밀번호 4자리">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="card_Pass" layoutX="194.0" layoutY="339.0" prefHeight="29.0" prefWidth="100.0" />
+      <Line endX="440.0" layoutX="115.0" layoutY="378.0" opacity="0.36" startX="-100.0" strokeWidth="0.2" />
+      <Label layoutX="28.0" layoutY="393.0" text="주민등록번호">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mem_Bir1" layoutX="194.0" layoutY="389.0" prefHeight="29.0" prefWidth="100.0" />
+      <Label layoutX="301.0" layoutY="393.0" text="-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mem_Bir2" layoutX="319.0" layoutY="389.0" prefHeight="29.0" prefWidth="100.0" />
+      <Line endX="440.0" layoutX="115.0" layoutY="428.0" opacity="0.36" startX="-100.0" strokeWidth="0.2" />
+      <Label layoutX="28.0" layoutY="444.0" text="휴대폰">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mem_Tel" layoutX="194.0" layoutY="440.0" prefHeight="29.0" prefWidth="69.0" />
+      <Label layoutX="27.0" layoutY="500.0" text="이메일">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mem_Email1" layoutX="193.0" layoutY="496.0" prefHeight="29.0" prefWidth="102.0" />
+      <Line endX="440.0" layoutX="115.0" layoutY="481.0" opacity="0.36" startX="-100.0" strokeWidth="0.2" />
+      <Label layoutX="302.0" layoutY="500.0" text="\@">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mem_Email2" layoutX="325.0" layoutY="496.0" prefHeight="29.0" prefWidth="102.0" />
+      <JFXButton layoutX="149.0" layoutY="556.0" onAction="#okBtn" prefHeight="36.0" prefWidth="278.0" style="-fx-background-color: black;" text="확인" textFill="WHITE" />
+      <Label fx:id="card" layoutX="194.0" layoutY="121.0" text="무슨카드" />
+      <Label layoutX="272.0" layoutY="444.0" text="-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mem_Tel1" layoutX="293.0" layoutY="440.0" prefHeight="29.0" prefWidth="69.0" />
+      <Label layoutX="371.0" layoutY="444.0" text="-">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mem_Tel11" layoutX="387.0" layoutY="440.0" prefHeight="29.0" prefWidth="69.0" />
+   </children>
+</AnchorPane>

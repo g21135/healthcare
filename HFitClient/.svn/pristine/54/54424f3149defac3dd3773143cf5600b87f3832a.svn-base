@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="detailView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="245.0" fitWidth="232.0" layoutX="14.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="listBtn" layoutX="708.0" layoutY="333.0" style="-fx-background-color: #FFE1E6 #FFE1E6;" text="목록으로 돌아가기" />
+      <ImageView fx:id="imageView2" fitHeight="282.0" fitWidth="582.0" layoutX="244.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="title" layoutX="58.0" layoutY="20.0" text="제목">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="content" layoutX="466.0" layoutY="105.0" text="내용" />
+   </children>
+</AnchorPane>

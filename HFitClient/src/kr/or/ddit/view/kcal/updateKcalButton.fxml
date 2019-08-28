@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="updatePana" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.kcal.UpdateButtonController">
+   <children>
+      <BorderPane prefHeight="257.0" prefWidth="544.0">
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="86.0" prefWidth="700.0">
+                     <children>
+                        <Label minWidth="-Infinity" prefHeight="21.0" text="이름 : ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="exName" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label minWidth="-Infinity" text="칼로리 : ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="exKcal" prefWidth="250.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="40.0" />
+                     </padding>
+                  </HBox>
+                  <Separator prefWidth="587.0" />
+                  <HBox alignment="TOP_CENTER" prefHeight="86.0" prefWidth="544.0">
+                     <children>
+                        <Label minWidth="-Infinity" text="이름 : ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="chName" prefHeight="29.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label minWidth="-Infinity" text="칼로리 : ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="3.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="chKcal" prefHeight="29.0" prefWidth="250.0" />
+                     </children>
+                     <padding>
+                        <Insets left="40.0" right="40.0" top="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="92.0" prefWidth="544.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="updateBtn" minWidth="-Infinity" mnemonicParsing="false" onAction="#upDateBtn" prefHeight="44.0" prefWidth="75.0" style="-fx-background-color: pink;" text="수정">
+                     <HBox.margin>
+                        <Insets left="40.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="returnBack" minWidth="-Infinity" mnemonicParsing="false" onAction="#retrunBtn" prefHeight="44.0" style="-fx-background-color: pink;" text="뒤로가기">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</Pane>

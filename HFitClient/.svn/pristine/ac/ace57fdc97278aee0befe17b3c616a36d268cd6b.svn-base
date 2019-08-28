@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="MainView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.prod.ProdController">
+   <left>
+      <AnchorPane prefHeight="454.0" prefWidth="775.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane layoutX="66.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0">
+               <top>
+                  <ImageView fx:id="ImageView1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </top>
+               <center>
+                  <JFXButton fx:id="Button1" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Text fx:id="Text1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+            <BorderPane layoutX="284.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <JFXButton fx:id="Button2" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Text fx:id="Text2" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER" />
+               </bottom>
+               <top>
+                  <ImageView fx:id="ImageView2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+            <BorderPane layoutX="503.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <JFXButton fx:id="Button3" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Text fx:id="Text3" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER" />
+               </bottom>
+               <top>
+                  <ImageView fx:id="ImageView3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+            <BorderPane layoutX="66.0" layoutY="306.0" prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <JFXButton fx:id="Button4" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Text fx:id="Text4" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER" />
+               </bottom>
+               <top>
+                  <ImageView fx:id="ImageView4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+            <BorderPane layoutX="284.0" layoutY="306.0" prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <JFXButton fx:id="Button5" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Text fx:id="Text5" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER" />
+               </bottom>
+               <top>
+                  <ImageView fx:id="ImageView5" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+            <BorderPane layoutX="503.0" layoutY="306.0" prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <JFXButton fx:id="Button6" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Text fx:id="Text6" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER" />
+               </bottom>
+               <top>
+                  <ImageView fx:id="ImageView6" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+            <Text layoutX="312.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HF Shop">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
