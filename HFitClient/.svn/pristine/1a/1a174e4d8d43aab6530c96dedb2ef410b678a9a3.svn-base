@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="joinView" prefHeight="642.0" prefWidth="1046.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.join.joinMainCotroller">
+   <center>
+      <AnchorPane prefHeight="479.0" prefWidth="748.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="401.0" layoutY="177.0" text="ID">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="402.0" layoutY="223.0" text="PASSWORD">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="401.0" layoutY="264.0" text="PW CHECK">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="401.0" layoutY="309.0" text="NAME">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="401.0" layoutY="471.0" text="BIRTH">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="401.0" layoutY="425.0" text="EMAIL">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="401.0" layoutY="389.0" text="TEL">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="400.0" layoutY="351.0" text="ADDRESS">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="id" layoutX="505.0" layoutY="176.0" prefHeight="23.0" prefWidth="200.0" promptText="예: healthNfit24" />
+            <JFXTextField fx:id="name" layoutX="505.0" layoutY="308.0" prefHeight="23.0" prefWidth="200.0" promptText="예: 전헬스" />
+            <JFXTextField fx:id="addr" layoutX="505.0" layoutY="348.0" prefHeight="23.0" prefWidth="200.0" promptText="주소를 입력해주세요." />
+            <JFXTextField fx:id="tel" layoutX="505.0" layoutY="387.0" prefHeight="23.0" prefWidth="200.0" promptText="예: 000-0000-0000" />
+            <JFXTextField fx:id="email" layoutX="505.0" layoutY="424.0" prefHeight="23.0" prefWidth="200.0" promptText="예: hnf123@hnf.com" />
+            <JFXTextField fx:id="birth" layoutX="505.0" layoutY="470.0" prefHeight="23.0" prefWidth="200.0" promptText="예: 1995년 5월 27일 -&gt; 950527" />
+            <FontAwesomeIconView fx:id="check" glyphName="CHECK" layoutX="725.0" layoutY="282.0" size="23" />
+            <JFXButton layoutX="621.0" layoutY="570.0" onAction="#okBtnClick" prefHeight="30.0" prefWidth="55.0" style="-fx-background-color: #FFE1E6; -fx-background-radius: 10;" text="확인">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="742.0" layoutY="570.0" onAction="#cancelBtnClick" prefHeight="30.0" prefWidth="55.0" style="-fx-background-color: #FFE1E6; -fx-background-radius: 10;" text="취소">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="398.0" layoutY="518.0" text="GENDER">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="man" layoutX="505.0" layoutY="521.0" text="남자" />
+            <JFXRadioButton fx:id="woman" layoutX="590.0" layoutY="521.0" text="여자" />
+            <JFXButton layoutX="717.0" layoutY="173.0" onAction="#doubleBtnClick" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #FFE1E6; -fx-background-radius: 10;" text="중복확인">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXPasswordField fx:id="pass" layoutX="505.0" layoutY="222.0" prefWidth="200.0" promptText="비밀번호를 입력해주세요." />
+            <JFXPasswordField fx:id="pass2" layoutX="505.0" layoutY="263.0" prefWidth="200.0" promptText="비밀번호를 한번 더 입력해주세요." />
+            <Label layoutX="839.0" layoutY="337.0" text="자동 가입 방지">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="captchaImage" fitHeight="73.0" fitWidth="111.0" layoutX="840.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXTextField fx:id="txtCaptcha" layoutX="805.0" layoutY="458.0" prefHeight="23.0" prefWidth="200.0" promptText="문자입력" />
+            <FontAwesomeIconView fx:id="replay" glyphName="UNDO" layoutX="971.0" layoutY="427.0" size="25" />
+            <Label layoutX="809.0" layoutY="499.0" text="위에 보이는 글자를" />
+            <Label layoutX="809.0" layoutY="520.0" text="정확하게 입력하여 주십시오." />
+            <Label layoutX="405.0" layoutY="101.0" text="회원가입">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

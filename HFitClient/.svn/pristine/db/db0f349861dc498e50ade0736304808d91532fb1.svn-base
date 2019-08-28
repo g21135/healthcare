@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="MainView" prefHeight="736.0" prefWidth="1249.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.prod.FoodProdController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pagination fx:id="page" layoutX="297.0" layoutY="176.0" prefHeight="418.0" prefWidth="922.0" />
+            <TextField layoutX="970.0" layoutY="142.0" prefHeight="29.0" prefWidth="134.0" />
+            <JFXButton layoutX="1113.0" layoutY="146.0" style="-fx-background-color: #00ced1;" text="검색" />
+            <HBox fx:id="hbox" alignment="CENTER_LEFT" layoutX="288.0" layoutY="178.0" prefHeight="364.0" prefWidth="900.0" />
+            <ImageView fx:id="Popups" fitHeight="520.0" fitWidth="250.0" layoutX="25.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="cartview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.cart.CartController">
+   <children>
+      <TableView fx:id="Cart_TableView" layoutX="44.0" layoutY="98.0" prefHeight="228.0" prefWidth="701.0">
+         <columns>
+            <TableColumn fx:id="Tv_Select" minWidth="0.0" prefWidth="41.0" text="선택" />
+            <TableColumn fx:id="Tv_Image" prefWidth="70.0" />
+            <TableColumn fx:id="Tv_Name" minWidth="0.0" prefWidth="226.0" text="상품명" />
+            <TableColumn fx:id="Tv_Price" prefWidth="74.0" text="가격" />
+            <TableColumn fx:id="Tv_Qty" prefWidth="70.0" text="수량" />
+            <TableColumn fx:id="Tv_ship" minWidth="1.0" text="배송유형" />
+            <TableColumn fx:id="Tv_ShipPrice" prefWidth="74.0" text="배송비" />
+            <TableColumn fx:id="Tv_Order" prefWidth="85.0" text="주문금액" />
+         </columns></TableView>
+      <BorderPane layoutX="44.0" layoutY="24.0" prefHeight="74.0" prefWidth="701.0">
+         <left>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="장바구니" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </left>
+         <right>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="01 장바구니 &gt; 02 주문/결제 &gt; 03 주문완료" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+      <JFXButton fx:id="Cart_Order" layoutX="593.0" layoutY="498.0" text="주문하기" />
+      <JFXButton fx:id="Cart_Delete" layoutX="510.0" layoutY="498.0"  text="취소하기" />
+      <Line endX="600.0" layoutX="144.0" layoutY="369.0" startX="-100.0" />
+      <Line endX="600.0" layoutX="144.0" layoutY="407.0" startX="-100.0" stroke="#00000044" />
+      <Line endX="600.0" layoutX="144.0" layoutY="469.0" startX="-100.0" stroke="#00000044" />
+      <Text layoutX="110.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="총 상품금액" />
+      <Text layoutX="610.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="총 결제금액" />
+      <Text layoutX="365.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="배송비" />
+      <Text fx:id="Prod_Price" layoutX="112.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="22,400">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="Prod_ship" layoutX="358.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2,500">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="Order_Price" layoutX="610.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24,900">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="490.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+      <Text layoutX="243.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" />
+      <Pagination fx:id="Cart_Page" layoutX="24.0" layoutY="84.0" prefHeight="284.0" prefWidth="737.0" />
+   </children>
+</AnchorPane>

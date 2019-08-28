@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="challengeView" prefHeight="579.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.board.challenge.ChallengeMainController">
+   <center>
+      <AnchorPane fx:id="anchorPane" prefHeight="387.0" prefWidth="723.0">
+         <children>
+            <Pagination fx:id="page" layoutX="130.0" layoutY="67.0" prefHeight="341.0" prefWidth="661.0" />
+            <TextField layoutX="630.0" layoutY="14.0" prefHeight="29.0" prefWidth="134.0" />
+            <JFXButton layoutX="772.0" layoutY="14.0" onAction="#challengeSearchBtnClick" style="-fx-background-color: #FFE1E6;" text="검색" />
+            <ComboBox layoutX="539.0" layoutY="14.0" prefHeight="29.0" prefWidth="85.0" />
+            <HBox fx:id="hbox" alignment="CENTER_LEFT" layoutX="115.0" layoutY="43.0" prefHeight="304.0" prefWidth="691.0" />
+            <JFXButton fx:id="insertChall" layoutX="109.0" layoutY="7.0" onAction="#challengeAdd" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: #FFE1E6;" text="첼린지추가" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox prefHeight="30.0" prefWidth="747.0" spacing="8.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton minHeight="-Infinity" minWidth="-Infinity" onAction="#checkBoardBtnClick" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: #FFE1E6;" text="인증게시판">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="check" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkBtnClick" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: #FFE1E6;" text="승인확인">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></JFXButton>
+         </children>
+         <BorderPane.margin>
+            <Insets left="108.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <padding>
+      <Insets top="30.0" />
+   </padding>
+</BorderPane>

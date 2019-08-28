@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="MainView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.prod.ProdDetailController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="Prod_Img" fitHeight="333.0" fitWidth="353.0" layoutX="33.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+           <!--     <image>
+                  <Image url="/kr/or/ddit/view/prod/Health1.jpg" />
+               </image> -->
+            </ImageView>
+            <Text fx:id="Prod_Name" layoutX="386.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="먹으면 거의 아이유 됨">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Line endX="275.0" layoutX="487.0" layoutY="131.0" startX="-100.0" />
+            <Text layoutX="386.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="판매가">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="Prod_Pirce" layoutX="506.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Line endX="275.0" layoutX="488.0" layoutY="195.0" startX="-100.0" stroke="#00000029" />
+            <Text layoutX="388.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="배송비 정책" />
+            <Text layoutX="472.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2,500원(5만원 이상 무료, 단 무료배송 상품 금액 제외)" />
+            <Text layoutX="388.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="도착 예정일" />
+            <Text layoutX="474.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="지금 주문 하면 1~3 소요 예정" />
+            <Text layoutX="396.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="제품설명" />
+            <Text fx:id="Prod_Content" layoutX="479.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text layoutX="402.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="수량">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <JFXComboBox fx:id="Prod_Qty" layoutX="477.0" layoutY="376.0" onAction="#comboChanged" prefHeight="23.0" prefWidth="258.0" promptText="수량을 선택해주세요" />
+            <Text layoutX="594.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="합계" />
+            <Text fx:id="Prod_Sum" layoutX="625.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="82.587890625" />
+            <JFXButton fx:id="Prod_Cart" layoutX="544.0" layoutY="478.0" onAction="#AddCart" text="장바구니 담기" />
+            <JFXButton fx:id="Prod_Order" layoutX="648.0" layoutY="478.0" onAction="#NowOrder" text="바로 구매하기" />
+            <Text layoutX="312.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HF Shop">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="Prod_Pirce1" layoutX="561.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="원" />
+            <Text fx:id="Prod_Pirce11" layoutX="723.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="원" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

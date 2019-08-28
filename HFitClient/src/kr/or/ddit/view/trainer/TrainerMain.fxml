@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.trainer.TrainerMainController">
+   <children>
+      <ImageView fx:id="homeBtnClick" fitHeight="93.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets left="30.0" />
+         </HBox.margin>
+         <image>
+            <Image url="main/Logo.png" />
+         </image>
+      </ImageView> 
+      <JFXButton minWidth="-Infinity" onAction="#trainerReportBtnClick" text="트레이너 레포트">
+         <graphic>
+            <FontAwesomeIconView glyphName="CALENDAR" size="20.0" textAlignment="CENTER" wrappingWidth="30.0" />
+         </graphic>
+         <HBox.margin>
+            <Insets left="300.0" />
+         </HBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton onAction="#caloryBtnClick" minWidth="-Infinity" text="칼로리 사전">
+         <graphic>
+            <FontAwesomeIconView glyphName="BOOK" size="20.0" textAlignment="CENTER" wrappingWidth="30.0" />
+         </graphic>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton minWidth="-Infinity" onAction="#homeTRBtnClick" text="홈 트레이닝">
+         <graphic>
+            <FontAwesomeIconView glyphName="CUBE" size="20.0" textAlignment="CENTER" wrappingWidth="30.0" />
+         </graphic>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton minWidth="-Infinity" onAction="#magazineBtnClick" text="HF 매거진">
+         <graphic>
+            <FontAwesomeIconView glyphName="CHECK" size="20.0" textAlignment="CENTER" wrappingWidth="30.0" />
+         </graphic>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton minWidth="-Infinity" onAction="#communityBtnClick" text="커뮤니티">
+         <graphic>
+            <FontAwesomeIconView glyphName="CHECK" size="20.0" text="" textAlignment="CENTER" wrappingWidth="30.0" />
+         </graphic>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</HBox>

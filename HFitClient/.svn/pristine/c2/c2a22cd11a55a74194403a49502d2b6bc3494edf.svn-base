@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="homeTrainingView" prefHeight="663.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.homeTraining.HomeTrainingMainController">
+   <children>
+      <JFXListView fx:id="listView" layoutX="280.0" layoutY="144.0" prefHeight="436.0" prefWidth="700.0" />
+      <JFXButton fx:id="insert" layoutX="570.0" layoutY="597.0" onAction="#insertBtnClick" text="등록" />
+      <JFXButton fx:id="delete" layoutX="691.0" layoutY="597.0" onAction="#deleteBtnClick" text="삭제" />
+      <JFXButton fx:id="update" layoutX="632.0" layoutY="597.0" onAction="#updateBtnClick" text="수정" />
+   </children>
+</AnchorPane>

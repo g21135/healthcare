@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="MainView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.cart.CartController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="Cart_TableView" layoutX="25.0" layoutY="97.0" prefHeight="239.0" prefWidth="719.0">
+              <columns>
+                <TableColumn fx:id="Tv_Select" prefWidth="42.0" text="선택" />
+                <TableColumn fx:id="Tv_Image" prefWidth="70.0" />
+                  <TableColumn fx:id="Tv_Name" prefWidth="202.0" text="상품명" />
+                  <TableColumn fx:id="Tv_Price" prefWidth="82.0" text="가격" />
+                  <TableColumn fx:id="Tv_Qty" prefWidth="74.0" text="수량" />
+                  <TableColumn fx:id="Tv_ship" prefWidth="81.0" text="배송유형" />
+                  <TableColumn fx:id="Tv_ShipPrice" prefWidth="73.0" text="배송비" />
+                  <TableColumn fx:id="Tv_Order" prefWidth="94.0" text="주문금액" />
+              </columns>
+            </TableView>
+            <Text layoutX="34.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="장바구니">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Line endX="630.0" layoutX="126.0" layoutY="380.0" startX="-100.0" />
+            <Line endX="630.0" layoutX="126.0" layoutY="419.0" startX="-100.0" stroke="#00000046" />
+            <Line endX="630.0" layoutX="126.0" layoutY="472.0" startX="-100.0" stroke="#0000003e" />
+            <JFXButton fx:id="Cart_Delete" layoutX="553.0" layoutY="487.0" text="취소하기" />
+            <JFXButton fx:id="Cart_Order" layoutX="651.0" layoutY="487.0" text="주문하기" />
+            <Text layoutX="462.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01 장바구니 &gt; 02 주문/결제 &gt; 03 주문완료">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="Prod_Price" layoutX="78.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="215.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="518.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="Order_Price" layoutX="609.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="Prod_ship" layoutX="368.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Pagination fx:id="Cart_Page" layoutX="10.0" layoutY="90.0" prefHeight="290.0" prefWidth="747.0" />
+            <Text layoutX="80.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="총 상품금액" />
+            <Text layoutX="605.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="총 결제금액" />
+            <Text layoutX="367.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="배송비" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

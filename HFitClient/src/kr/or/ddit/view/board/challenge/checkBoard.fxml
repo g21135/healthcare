@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="543.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.view.board.challenge.CheckBoardController">
+   <children>
+      <Pagination fx:id="page" layoutX="148.0" layoutY="102.0" prefHeight="328.0" prefWidth="714.0" />
+      <TableView fx:id="checkTable" layoutX="167.0" layoutY="121.0" prefHeight="252.0" prefWidth="682.0">
+         <columns>
+            <TableColumn fx:id="num" prefWidth="56.0" text="NUM" />
+            <TableColumn fx:id="photo" minWidth="0.0" prefWidth="82.0" text="PHOTO" />
+            <TableColumn fx:id="title" prefWidth="237.0" text="TITLE" />
+            <TableColumn fx:id="date" prefWidth="111.0" text="DATE" />
+            <TableColumn fx:id="check" minWidth="0.0" prefWidth="195.0" text="CHECK" />
+         </columns>
+      </TableView>
+      <Label layoutX="167.0" layoutY="29.0" text="인증게시판">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchText" layoutX="662.0" layoutY="76.0" prefHeight="26.0" prefWidth="135.0" />
+      <JFXButton fx:id="searchBtn" layoutX="805.0" layoutY="76.0" onAction="#searchBtnClick" prefHeight="26.0" style="-fx-background-color: #FFE1E6;" text="검색">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="searchSort" layoutX="528.0" layoutY="76.0" prefHeight="29.0" prefWidth="128.0" promptText="제목+내용" />
+      <JFXButton fx:id="insert" layoutX="792.0" layoutY="383.0" onAction="#insertBtnClick" prefHeight="26.0" style="-fx-background-color: #FFE1E6;" text="글쓰기">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="applyChallCombo" layoutX="167.0" layoutY="76.0" prefHeight="29.0" prefWidth="150.0" promptText="첼린지 선택" />
+      <JFXButton fx:id="back" layoutX="167.0" layoutY="383.0" onAction="#backBtnClick" prefHeight="26.0" style="-fx-background-color: #FFE1E6;" text="목록">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="324.0" layoutY="82.0" text="첼린지를 선택해주세요" />
+   </children>
+</AnchorPane>

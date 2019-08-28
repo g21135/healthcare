@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="768.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="7.0" layoutY="6.0" prefHeight="523.0" prefWidth="755.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="Text" layoutX="190.0" layoutY="327.0" text="결제 오류로 인해 신용카드 결제가 불가합니다." textFill="#911515">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fx:id="" fill="#911515" glyphName="SHOPPING_CART" layoutX="325.0" layoutY="217.0" size="130" />
+            <FontAwesomeIconView fx:id="" glyphName="EXCLAMATION" layoutX="319.0" layoutY="115.0" size="60" />
+            <FontAwesomeIconView fx:id="image" glyphName="EXCLAMATION" layoutX="296.0" layoutY="125.0" rotate="-28.6" size="50" />
+            <Line endX="176.0" layoutX="350.0" layoutY="250.0" startX="-100.0" />
+            <Label fx:id="infoText" layoutX="247.0" layoutY="262.0" text="신용카드 결제 불가 안내" textFill="#911515">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Line endX="176.0" layoutX="350.0" layoutY="304.0" startX="-100.0" />
+            <Label fx:id="Text2" layoutX="279.0" layoutY="358.0" text="빠른 시일 내 개선 하겠습니다." textFill="#d0c3c3">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="Text3" layoutX="276.0" layoutY="381.0" text="고객님들의 양해 부탁드립니다." textFill="#d0c3c3">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="text" layoutX="288.0" layoutY="418.0" style="-fx-font-weight: bold;" text="결제불가 사유 : 잔액 부족">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>
